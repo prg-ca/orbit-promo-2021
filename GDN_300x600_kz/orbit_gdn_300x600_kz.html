@@ -39,22 +39,25 @@
         .to("#heart", 0.2, { opacity: 0, scale: 1.4})
 
         .from("#txt03", 0.2, {opacity: 0, x: 200}, '-=0.3')
-        .from("#txt04", 0.2, {opacity: 0, x: -200}, '-=0.2')
 
         .from("#heart01", 0.2, { opacity: 0, scale: 0.6}, '-=0.2')
         .to("#heart01", 0.6, { scale: 1.2, x: 42, y: -134, rotate: 16})
         .to("#heart01", 0.2, { opacity: 0, scale: 1.4})
 
-        .from("#heart02", 0.2, { opacity: 0, scale: 0.6}, '-=0.2')
-        .to("#heart02", 0.6, { scale: 1.2, x: 42, y: -134, rotate: 16})
-        .to("#heart02", 0.2, { opacity: 0, scale: 1.4})
+        // .from("#heart02", 0.2, { opacity: 0, scale: 0.6}, '-=0.2')
+        // .to("#heart02", 0.6, { scale: 1.2, x: 42, y: -134, rotate: 16})
+        // .to("#heart02", 0.2, { opacity: 0, scale: 1.4})
 
-        .to("#txt03", 0.2, {opacity: 0, x: 200})
-        .to("#txt04", 0.2, {opacity: 0, x: -200}, '-=0.2')
-        .to("#mask", 0.3, { scale: 1 }, '-=0.1')
+        // .to("#txt04", 0.2, {opacity: 0, x: -200}, '-=0.2')
+        .to("#mask", 0.3, { scale: 1 }, '+=0.1')
         .to("#smile02", 0.2, { opacity: 0, scale: 0.8}, '-=0.2')
-        .to("#logo", 0.2, {opacity: 1,  scale: 1}, '-=0.1')
-        .from("#txt05", 0.2, {opacity: 0, y: 80}, '-=0.1')
+        .to("#txt03", 0.2, {y: -107})
+        .from("#txt04", 0.2, {opacity: 0, y: 20})
+        .from("#circle", 0.3, {opacity: 0, scale: 0.4}, '-=0.2')
+        .from("#phone", 0.3, {opacity: 0, scale: 0.4, y: 100}, '-=0.1')
+        .from("#ears", 0.3, {opacity: 0, scale: 0.4, y: 100}, '-=0.1')
+        // .to("#logo", 0.2, {opacity: 1,  scale: 1}, '-=0.1')
+        .from("#pack", 0.2, {opacity: 0, y: 80}, '-=0.1')
 
         // .from("#bg02", 0.4, {y: -700}, '+=0.8')
         // .from("#txt03", 0.3, {opacity: 0, scale: 0.4, y: -100}, '-=0.1')
@@ -104,10 +107,17 @@
       <div id="heart01" class="el heart">
         <img src="heart.png">
       </div>
-      <div id="heart02" class="el heart">
-        <img src="heart.png">
+      <div id="circle" class="el"></div>
+      <div id="phone" class="el">
+        <img src="phone.png">
       </div>
-      <div id="txt05" class="el">
+      <div id="ears" class="el">
+        <img src="ears.png">
+      </div>
+      <div id="pack" class="el">
+        <img src="pack.png">
+      </div>
+       <div id="txt05" class="el">
         <img src="txt05.svg">
       </div>
       <div id="schirm"></div>     
