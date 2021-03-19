@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="ad.size" content="width=320,height=100">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinemax_2.0.1_min.js"></script>
+  <script type="text/javascript">
+    var clickTag = "#"; 
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      TweenLite.ticker.useRAF(false);
+      TweenLite.lagSmoothing(0);
+      var tl = new TimelineMax({ repeat: 3, repeatDelay: 4});
+      // var tl = new TimelineMax();
+
+      tl.from("#schirm", 0.6, {autoAlpha: 1})
+
+        .from("#smile02", 0.2, { opacity: 0, scale: 0.8}, '-=0.1')
+        .from("#smile01", 0.2, { opacity: 0, scale: 0.8}, '-=0.1')
+        .from("#hearteyes", 0.2, { opacity: 0, scale: 0.8}, '-=0.2')
+        .from("#txt01", 0.2, {opacity: 0, y: -60}, '-=0.1')
+        .from("#txt02", 0.2, {opacity: 0, y: 60}, '-=0.1')
+        .from("#heart", 0.2, { opacity: 0, scale: 0.6}, '-=0.1')
+        .to("#heart", 0.6, { scale: 1.2, x: 12, y: -20, rotate: 16}, '-=0.3')
+        .to("#heart", 0.2, { opacity: 0, scale: 1.4})
+        .from("#heart01", 0.2, { opacity: 0, scale: 0.6}, '-=0.2')
+        .to("#heart01", 0.6, { scale: 1.2, x: 12, y: -20, rotate: 16})
+        .to("#heart01", 0.2, { opacity: 0, scale: 1.4})
+
+        .to("#hearteyes", 0.2, { scale: 1.4, y: -3 }, '+=0.2')
+        .to("#hearteyes", 0.1, { scale: 1.1, y: -1 })
+        .to("#hearteyes", 0.2, { scale: 1.4, y: -3 })
+        .to("#hearteyes", 0.1, { scale: 1, y: 0 })
+
+        .from("#mask", 0.4, { scale: 10 }, '+=0.7')
+        .to("#txt01", 0.2, {opacity: 0, x: 200}, '-=0.2')
+        .to("#txt02", 0.2, {opacity: 0, x: -200}, '-=0.2')
+
+
+        .from("#txt03", 0.2, {opacity: 0, y: -80}, '-=0.1')
+        .from("#txt04", 0.2, {opacity: 0, y: 80}, '-=0.2')
+        .from("#circle", 0.3, {opacity: 0, scale: 0.4}, '+=0.1')
+        .from("#phone", 0.3, {opacity: 0, scale: 0.4, y: 40}, '-=0.1')
+        .from("#ears", 0.3, {opacity: 0, scale: 0.4, y: 40}, '-=0.1')
+        .from("#pack", 0.2, {opacity: 0, y: 30, scale: 0.6}, '+=0.2')
+        .from("#mask02", 0.4, { scale: 10 }, '+=1.2')
+        .to("#txt03", 0.2, {opacity: 0, y: -80}, '-=0.1')
+        .to("#txt04", 0.2, {opacity: 0, y: 80}, '-=0.2')
+
+        .from("#logo", 1, {opacity: 0,  scale: 0.4, ease: Elastic.easeOut.config(1, 0.4)}, '-=0.1')
+        .from("#txt05", 0.2, {opacity: 0, y: 8})
+        ;
+   });
+  </script>
+</head>
+<body>
+  <a href="javascript:window.open(window.clickTag)">
+    <div class="container">
+      <div id="smile02" class="el">
+        <img src="smile02.png">
+      </div>
+      <div id="heart" class="el heart">
+        <img src="heart.png">
+      </div>
+      <div id="heart01" class="el heart">
+        <img src="heart.png">
+      </div>
+      <div id="smile01" class="el">
+        <img src="smile01.png">
+      </div>
+      <div id="hearteyes" class="el">
+        <img src="hearteyes.png">
+      </div>
+      <div id="txt01" class="el">
+        <img src="txt01.svg">
+      </div>
+      <div id="txt02" class="el">
+        <img src="txt02.svg">
+      </div>
+      <div id="mask" class="el  mask">
+        <img src="heart-mask.svg">
+      </div> 
+      <div id="txt03" class="el">
+        <img src="txt03.svg">
+      </div>
+      <div id="txt04" class="el">
+        <img src="txt04.svg">
+      </div>
+      <div id="circle" class="el"></div>
+      <div id="phone" class="el">
+        <img src="phone.png">
+      </div>
+      <div id="ears" class="el">
+        <img src="ears.png">
+      </div>
+      <div id="pack" class="el">
+        <img src="pack.png">
+      </div>
+      <div id="mask02" class="el  mask">
+        <img src="heart-mask.svg">
+      </div> 
+      <div id="logo" class="el">
+        <img src="logo.png">
+      </div>
+      <div id="txt05" class="el">
+        <img src="txt05.svg">
+      </div>
+      <div id="schirm"></div>     
+    </div>
+  </a>
+</body>

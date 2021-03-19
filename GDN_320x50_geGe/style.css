@@ -1,0 +1,154 @@
+
+body, body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: 700;
+}
+
+.container {
+  position: absolute;
+  width: 320px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  /*top: 300px;*/
+  /*left: 600px;*/
+  background-color: #1d99d6;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+.el {
+  position: absolute;
+  /*width: 60px;*/
+  left: 0;
+  top: 0;
+}
+
+#logo {
+  width: 97px;
+  left: 31px;
+  top: 1px;
+}
+
+
+
+#smile01 {
+  width: 36px;
+  left: 276px;
+  top: 7px;
+}
+
+
+
+#hearteyes {
+  width: 32px;
+  left: 278px;
+  top: 16px;
+}
+
+
+#smile02 {
+  width: 36px;
+  left: 10px;
+  top: 7px;
+}
+
+.heart {
+  width: 13px;
+  left: 40px;
+  top: 21px;
+}
+
+
+
+
+#txt01 {
+  width: 361px;
+  left: -22px;
+  top: 2px;
+}
+
+#txt02 {
+  width: 361px;
+  left: -22px;
+  top: 2px;
+}
+
+#txt03 {
+  width: 336px;
+  left: -6px;
+  top: 6px;
+}
+
+#txt04 {
+  width: 336px;
+  left: -6px;
+  top: 6px;
+}
+
+#txt05 {
+  width: 189px;
+  left: 119px;
+  top: 25px;
+}
+
+.mask {
+  width: 1320px;
+  left: -500px;
+  top: -635px;
+}
+
+#circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  left: 6px;
+  top: 6px;
+  background-color: #1dc3ff;
+}
+
+#phone {
+  width: 39px;
+  left: 12px;
+  top: 2px;
+}
+
+#ears {
+  width: 28px;
+  left: 5px;
+  top: 2px;
+}
+
+#pack {
+  width: 133px;
+  left: 573px;
+  top: 3px;
+}
+
+
+#schirm {
+  position: absolute;
+  width: 320px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background-color: #1d99d6;
+  background-size: cover;
+  opacity: 0;
+}
